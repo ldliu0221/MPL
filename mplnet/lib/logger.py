@@ -14,7 +14,7 @@ LOGGER = logging.getLogger(os.getenv("LOGGING_NAME", "MPLNet"))
 def setup_logger(logfile: Optional[str] = None) -> NoneType:
     LOGGER.handlers.clear()
     formatter = ColoredFormatter(
-        '[%(cyan)s%(asctime)s%(reset)s][%(light_blue)s%(name)s%(reset)s][%(log_color)s%(levelname)s%(reset)s] - %(message)s',
+        '[%(cyan)s%(asctime)s%(reset)s][%(blue)s%(name)s%(reset)s][%(log_color)s%(levelname)s%(reset)s] - %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
         reset=True,
         log_colors={
